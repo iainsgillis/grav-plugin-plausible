@@ -1,0 +1,33 @@
+{
+  "name": "iainsgillis/plausible",
+  "type": "grav-plugin",
+  "description": "Integrate Plausible Analytics into your Grav site and configure it from your admin panel.",
+  "keywords": [
+    "plugin"
+  ],
+  "homepage": "https://github.com/iainsgillis/grav-plugin-plausible",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iain Gillis",
+      "email": "iain@iainsgillis.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\Plausible\\": "classes/"
+    },
+    "classmap": [
+      "plausible.php"
+    ]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

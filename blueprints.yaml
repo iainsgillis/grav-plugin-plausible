@@ -1,0 +1,36 @@
+name: Plausible Analytics
+slug: plausible
+type: plugin
+version: 0.1.0
+description: Integrate Plausible Analytics into your Grav site.
+icon: bar-chart
+author:
+  name: Iain Gillis
+  email: iain@iainsgillis.com
+homepage: https://github.com/iainsgillis/grav-plugin-plausible
+# demo: http://demo.yoursite.com
+keywords: grav, plugin, plausible, analytics
+bugs: https://github.com/iainsgillis/grav-plugin-plausible/issues
+docs: https://github.com/iainsgillis/grav-plugin-plausible/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: ">=1.6.0" }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    data_domain:
+      type: text
+      label: PLUGIN_PLAUSIBLE.DATA_DOMAIN
+      help: PLUGIN_PLAUSIBLE.DATA_DOMAIN_HELP
