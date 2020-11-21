@@ -1,4 +1,31 @@
 en:
   PLUGIN_PLAUSIBLE:
+    # Basic
+    BASIC: General
     DATA_DOMAIN: Domain
-    DATA_DOMAIN_HELP: Just the naked domain without www or https://. You'll need to add your site to plausible.io if you haven't already.
+    DATA_DOMAIN_HELP: |
+      Just the naked domain without www or https://. You'll need to add your site to plausible.io if you haven't already.
+      See https://docs.plausible.io/add-website.
+
+    # Advanced: Custom Events, Outbound Links
+    ADVANCED: Advanced
+    ENABLE_CUSTOM_EVENT_TRACKING: Enable custom event tracking?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: See https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Yes
+    DONT_TRACK_CUSTOM: No
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Enable outbound link tracking?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: See https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Yes
+    DONT_TRACK_OUTBOUND: No
+
+    # Public
+    PUBLIC_DASHBOARD: Public Dashboard
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Add link to public dashboard in HTML source?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Adds a comment in your HTML source with a link to your public dashboard.
+      Idea courtesy of https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Yes
+    HIDE_PUBLIC_DASHBOARD_URL: No
+    PUBLIC_DASHBOARD_URL: Public dashboard URL
+    PUBLIC_DASHBOARD_URL_HELP: See https://docs.plausible.io/visibility.

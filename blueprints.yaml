@@ -11,7 +11,7 @@ homepage: https://github.com/iainsgillis/grav-plugin-plausible
 # demo: http://demo.yoursite.com
 keywords: grav, plugin, plausible, analytics
 bugs: https://github.com/iainsgillis/grav-plugin-plausible/issues
-docs: https://github.com/iainsgillis/grav-plugin-plausible/blob/develop/README.md
+docs: https://github.com/iainsgillis/grav-plugin-plausible/blob/main/README.md
 license: MIT
 
 dependencies:
@@ -20,17 +20,67 @@ dependencies:
 form:
   validation: strict
   fields:
-    enabled:
-      type: toggle
-      label: PLUGIN_ADMIN.PLUGIN_STATUS
-      highlight: 1
-      default: 0
-      options:
-        1: PLUGIN_ADMIN.ENABLED
-        0: PLUGIN_ADMIN.DISABLED
-      validate:
-        type: bool
-    data_domain:
-      type: text
-      label: PLUGIN_PLAUSIBLE.DATA_DOMAIN
-      help: PLUGIN_PLAUSIBLE.DATA_DOMAIN_HELP
+    basic_setup:
+      type: section
+      title: PLUGIN_PLAUSIBLE.BASIC
+      fields:
+        enabled:
+          type: toggle
+          label: PLUGIN_ADMIN.PLUGIN_STATUS
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        data_domain:
+          type: text
+          label: PLUGIN_PLAUSIBLE.DATA_DOMAIN
+          help: PLUGIN_PLAUSIBLE.DATA_DOMAIN_HELP
+          placeholder: <yourdomain.com>
+
+    advanced:
+      type: section
+      title: PLUGIN_PLAUSIBLE.ADVANCED
+      fields:
+        custom_event_goals:
+          type: toggle
+          label: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING
+          help: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING_HELP
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_PLAUSIBLE.TRACK_CUSTOM
+            0: PLUGIN_PLAUSIBLE.DONT_TRACK_CUSTOM
+        outbound_link_tracking:
+          type: toggle
+          label: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING
+          help: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING_HELP
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
+            0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
+
+    public_dashboard:
+      type: section
+      title: PLUGIN_PLAUSIBLE.PUBLIC_DASHBOARD
+      fields:
+        public_dashboard_visible:
+          type: toggle
+          label: PLUGIN_PLAUSIBLE.ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE
+          help: PLUGIN_PLAUSIBLE.ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP
+          highlight: 1
+          default: 0
+          options:
+            1: Yes
+            0: No
+          validate:
+            type: bool
+
+        public_dashboard_url:
+          type: text
+          label: PLUGIN_PLAUSIBLE.PUBLIC_DASHBOARD_URL
+          help: PLUGIN_PLAUSIBLE.PUBLIC_DASHBOARD_URL_HELP
+          placeholder: https://plausible.io/<yourdomain.com>

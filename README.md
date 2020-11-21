@@ -12,19 +12,19 @@ Installing the Plausible Analytics plugin can be done in one of three ways: The 
 
 To install the plugin via the [GPM](http://learn.getgrav.org/advanced/grav-gpm), through your system's terminal (also called the command line), navigate to the root of your Grav-installation, and enter:
 
-    bin/gpm install plausible-analytics
+    bin/gpm install plausible
 
-This will install the Plausible Analytics plugin into your `/user/plugins`-directory within Grav. Its files can be found under `/your/site/grav/user/plugins/plausible-analytics`.
+This will install the Plausible Analytics plugin into your `/user/plugins`-directory within Grav. Its files can be found under `/your/site/grav/user/plugins/plausible`.
 
 ### Manual Installation
 
-To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `plausible-analytics`. You can find these files on [GitHub](https://github.com/iainsgillis/grav-plugin-plausible-analytics) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
+To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `plausible`. You can find these files on [GitHub](https://github.com/iainsgillis/grav-plugin-plausible) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
 
-    /your/site/grav/user/plugins/plausible-analytics
+    /your/site/grav/user/plugins/plausible
 	
-> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/iainsgillis/grav-plugin-plausible-analytics/blob/master/blueprints.yaml).
+> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/iainsgillis/grav-plugin-plausible/blob/master/blueprints.yaml).
 
 ### Admin Plugin
 
@@ -32,7 +32,7 @@ If you use the Admin Plugin, you can install the plugin directly by browsing the
 
 ## Configuration
 
-Before configuring this plugin, you should copy the `user/plugins/plausible-analytics/plausible-analytics.yaml` to `user/config/plugins/plausible-analytics.yaml` and only edit that copy.
+Before configuring this plugin, you should copy the `user/plugins/plausible/plausible.yaml` to `user/config/plugins/plausible.yaml` and only edit that copy.
 
 Here is the default configuration and an explanation of available options:
 
@@ -40,7 +40,7 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 ```
 
-Note that if you use the Admin Plugin, a file with your configuration named plausible-analytics.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
+Note that if you use the Admin Plugin, a file with your configuration named plausible.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 

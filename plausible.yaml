@@ -1,4 +1,7 @@
 enabled: true
 active: true
-data_domain: example.com
-data_domain_help: Just the naked domain without www or https://. You'll need to add your site to plausible.io if you haven't already.
+data_domain: <yourdomain.com>
+custom_event_goals: false
+outbound_link_tracking: false
+public_dashboard_visible: false
+public_dashboard_url: https://plausible.io/<yourdomain.com>
