@@ -1,7 +1,7 @@
 enabled: true
 active: true
-data_domain: <yourdomain.com>
+data_domain:
 custom_event_goals: false
 outbound_link_tracking: false
 public_dashboard_visible: false
-public_dashboard_url: https://plausible.io/<yourdomain.com>
+public_dashboard_url:
