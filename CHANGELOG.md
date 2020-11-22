@@ -1,3 +1,9 @@
+# v0.2.2
+##  11/22/2020
+
+1. [](#improved)
+    * Updated README to refer to Shortcode Assets plugin
+
 # v0.2.1
 ##  11/21/2020
 

@@ -1,14 +1,13 @@
 name: Plausible Analytics
 slug: plausible
 type: plugin
-version: 0.2.1
+version: 0.2.2
 description: Integrate Plausible Analytics into your Grav site.
 icon: bar-chart
 author:
   name: Iain Gillis
   email: iain@iainsgillis.com
 homepage: https://github.com/iainsgillis/grav-plugin-plausible
-# demo: http://demo.yoursite.com
 keywords: grav, plugin, plausible, analytics
 bugs: https://github.com/iainsgillis/grav-plugin-plausible/issues
 docs: https://github.com/iainsgillis/grav-plugin-plausible/blob/main/README.md
