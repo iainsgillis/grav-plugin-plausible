@@ -59,7 +59,7 @@ Note that if you use the Admin Plugin, a file with your configuration named plau
 Refer to the [Plausible docs on Custom event goals](https://docs.plausible.io/custom-event-goals) for more details.
 
 1. Set `custom_event_goals` to `true`. (This takes care of the tracking setup step described in Plausible's docs.)
-2. Setup your event listeners to track whatever custom events you're interested in. One way to do this is with the [Custom JS Plugin](https://github.com/dimayakovlev/grav-plugin-custom-js) by @dimayakovlev.
+2. Setup your event listeners to track whatever custom events you're interested in. One way to do this is with the [Custom JS Plugin](https://github.com/dimayakovlev/grav-plugin-custom-js) by @dimayakovlev. [Shortcode Assets](https://github.com/getgrav/grav-plugin-shortcode-assets), by the core Grav team, would work, too.
 3. Follow the Plausible documentation to configure your custom event goal tracking in Plausible.
 #### Outbound Link Tracking
 
