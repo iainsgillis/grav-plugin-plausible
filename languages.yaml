@@ -29,3 +29,221 @@ en:
     HIDE_PUBLIC_DASHBOARD_URL: No
     PUBLIC_DASHBOARD_URL: Public dashboard URL
     PUBLIC_DASHBOARD_URL_HELP: See https://docs.plausible.io/visibility.
+
+fr:
+  PLUGIN_PLAUSIBLE:
+    # Basic
+    BASIC: Général
+    DATA_DOMAIN: Domaine
+    DATA_DOMAIN_HELP: |
+      Le domaine nu, sans www ou https://. Vous devrez ajouter votre site à plausible.io si vous ne l'avez pas déjà fait.
+      Voir https://docs.plausible.io/add-website.
+
+    # Advanced: Custom Events, Outbound Links
+    ADVANCED: Avancé
+    ENABLE_CUSTOM_EVENT_TRACKING: Permettre un suivi personnalisé des événements ?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Voir https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Oui
+    DONT_TRACK_CUSTOM: Non
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Activer le suivi des liens sortants ?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Voir https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Oui
+    DONT_TRACK_OUTBOUND: Non
+
+    # Public
+    PUBLIC_DASHBOARD: Tableau de bord public
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Ajouter un lien vers le tableau de bord public dans la source HTML ?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Ajoute un commentaire dans votre source HTML avec un lien vers votre tableau de bord public.
+      L'idée est une gracieuseté de https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Oui
+    HIDE_PUBLIC_DASHBOARD_URL: Non
+    PUBLIC_DASHBOARD_URL: URL du tableau de bord public
+    PUBLIC_DASHBOARD_URL_HELP: Voir https://docs.plausible.io/visibility.
+
+de:
+  PLUGIN_PLAUSIBLE:
+
+    BASIC: Allgemein
+    DATA_DOMAIN: Domäne
+    DATA_DOMAIN_HELP: |
+      Nur die nackte Domain ohne www oder https://. Sie müssen Ihre Site zu plausible.io hinzufügen, falls Sie das nicht schon getan haben.
+      Siehe https://docs.plausible.io/add-website.
+
+    ADVANCED: Erweitert
+    ENABLE_CUSTOM_EVENT_TRACKING: Benutzerdefinierte Ereignisverfolgung einschalten?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Siehe https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Ja
+    DONT_TRACK_CUSTOM: Nein
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Aktivieren Sie die Verfolgung ausgehender Links?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Siehe https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Ja
+    DONT_TRACK_OUTBOUND: Nein
+
+    PUBLIC_DASHBOARD: Öffentliches Dashboard
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Link zum öffentlichen Dashboard im HTML-Quelltext hinzufügen?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Fügt einen Kommentar in Ihrem HTML-Quelltext mit einem Link zu Ihrem öffentlichen Dashboard hinzu.
+      Idee mit freundlicher Genehmigung von https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Ja
+    HIDE_PUBLIC_DASHBOARD_URL: Nein
+    PUBLIC_DASHBOARD_URL: Öffentliche Dashboard-URL
+    PUBLIC_DASHBOARD_URL_HELP: Siehe https://docs.plausible.io/visibility.
+
+it:
+  PLUGIN_PLAUSIBLE:
+
+    BASIC: Generale
+    DATA_DOMAIN: Dominio
+    DATA_DOMAIN_HELP: |
+      Solo il dominio nudo senza www o https://. Dovrai aggiungere il tuo sito a plausible.io se non l'hai già fatto.
+      Vedi https://docs.plausible.io/add-website.
+
+    ADVANCED: Avanzato
+    ENABLE_CUSTOM_EVENT_TRACKING: Abilitare il tracking personalizzato degli eventi?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Vedi https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Sì
+    DONT_TRACK_CUSTOM: No
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Abilitare il tracciamento dei collegamenti in uscita?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Vedere https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Sì
+    DONT_TRACK_OUTBOUND: No
+
+    PUBLIC_DASHBOARD: Cruscotto pubblico
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Aggiungere un link alla dashboard pubblica in sorgente HTML?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Aggiunge un commento nel vostro sorgente HTML con un link alla vostra dashboard pubblica.
+      Idea per gentile concessione di https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Sì
+    HIDE_PUBLIC_DASHBOARD_URL: No
+    PUBLIC_DASHBOARD_URL: URL del cruscotto pubblico
+    PUBLIC_DASHBOARD_URL_HELP: Vedi https://docs.plausible.io/visibility.
+
+es:
+  PLUGIN_PLAUSIBLE:
+
+    BASIC: General
+    DATA_DOMAIN: Dominio
+    DATA_DOMAIN_HELP: |
+      Sólo el dominio desnudo sin www o https://. Tendrás que añadir tu sitio a plausible.io si no lo has hecho ya.
+      Vea https://docs.plausible.io/add-website.
+
+    ADVANCED: Avanzado
+    ENABLE_CUSTOM_EVENT_TRACKING: Habilitar el seguimiento de eventos personalizados.
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Ver https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Sí
+    DONT_TRACK_CUSTOM: No
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Habilitar el rastreo de enlaces salientes?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Ver https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Sí
+    DONT_TRACK_OUTBOUND: No
+
+    PUBLIC_DASHBOARD: Tablero público
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: ¿Agregar un enlace al tablero público en una fuente HTML?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Añade un comentario en tu fuente HTML con un enlace a tu tablero público.
+      Idea cortesía de https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Sí
+    HIDE_PUBLIC_DASHBOARD_URL: No
+    PUBLIC_DASHBOARD_URL: URL del tablero público
+    PUBLIC_DASHBOARD_URL_HELP: Ver https://docs.plausible.io/visibility.
+
+pt:
+  PLUGIN_PLAUSIBLE:
+
+    BASIC: Geral
+    DATA_DOMAIN: Domínio
+    DATA_DOMAIN_HELP: |
+      Apenas o domínio nú sem www ou https://. Terá de acrescentar o seu site ao plausível.io se ainda não o fez.
+      Ver https://docs.plausible.io/add-website.
+
+    # Avançado: Eventos Personalizados, Links de Saída
+    ADVANCED: Avançado
+    ENABLE_CUSTOM_EVENT_TRACKING: Permitir o seguimento de eventos personalizados?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Ver https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM_CUSTOM: Sim
+    DONT_TRACK_CUSTOM: Não
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Habilitar o rastreio da ligação de saída?
+    ENABLE_OUTBOUND_LINK_LINK_TRACKING_HELP: Ver https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Sim
+    DONT_TRACK_OUTBOUND: Não
+
+    # Público
+    PUBLIC_DASHBOARD: Painel público
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Acrescentar ligação ao painel de controlo público na fonte HTML?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Adiciona um comentário na sua fonte HTML com um link para o seu painel de controlo público.
+      Ideia gentilmente cedida por https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Sim
+    HIDE_PUBLIC_DASHBOARD_URL: Não
+    PUBLIC_DASHBOARD_URL: URL do painel de controlo público
+    PUBLIC_DASHBOARD_URL_HELP: Ver https://docs.plausible.io/visibility.
+
+pl:
+  PLUGIN_PLAUSIBLE:
+    # Podstawowy
+    BASIC: Ogólne
+    DATA_DOMAIN: Domena
+    DATA_DOMAIN_HELP: |
+      Tylko naga domena bez www lub https://. Musisz dodać swoją stronę do plausible.io, jeśli jeszcze tego nie zrobiłeś.
+      Zobacz https://docs.plausible.io/add-website.
+
+    # Zaawansowane: Niestandardowe wydarzenia, linki wychodzące
+    ADVANCED: Zaawansowany:
+    ENABLE_CUSTOM_EVENT_TRACKING: Włączyć niestandardowe śledzenie zdarzeń?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Zobacz https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Tak
+    DONT_TRACK_CUSTOM: Nie
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Włączyć śledzenie linków wychodzących?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Patrz: https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND_OUTBOUND: Tak
+    DONT_TRACK_OUTBOUND: Nie
+
+    # Public
+    PUBLIC_DASHBOARD: Public Dashboard
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Dodać link do publicznego dashboardu w źródle HTML?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Dodaje komentarz w twoim źródle HTML z linkiem do twojego publicznego pulpitu.
+      Idea dzięki uprzejmości https://github.com/divinerites/plausible-hugo
+    SHOW_PUBLIC_DASHBOARD_URL: Tak
+    HIDE_PUBLIC_DASHBOARD_URL: Nie
+    PUBLIC_DASHBOARD_URL: Publiczna tablica rozdzielcza URL
+    PUBLIC_DASHBOARD_URL_HELP: Patrz https://docs.plausible.io/visibility.
+
+ru:
+  PLUGIN_PLAUSIBLE:
+    # Basic
+    BASIC: Генерал
+    DATA_DOMAIN: Домен
+    DATA_DOMAIN_HELP: |
+      Только голый домен без www или https://. Если вы еще этого не сделали, то вам нужно будет добавить свой сайт в "Правдоподобный.io".
+      Смотрите https://docs.plausible.io/add-website.
+
+    # Advanced: Пользовательские события, исходящие ссылки
+    ADVANCED: Расширенный сайт
+    ENABLE_CUSTOM_EVENT_TRACKING: Включить пользовательское отслеживание событий?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: См. https://docs.plausible.io/custom-event-goals.
+    TRACK_CUSTOM: Да.
+    DONT_TRACK_CUSTOM: Нет.
+
+    ENABLE_OUTBOUND_LINK_TRACKING: Включить отслеживание исходящих ссылок?
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: См. https://docs.plausible.io/outbound-link-click-tracking.
+    TRACK_OUTBOUND: Да.
+    DONT_TRACK_OUTBOUND: No
+
+    # Публика
+    PUBLIC_DASHBOARD: Общественная панель управления
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE: Добавить ссылку на публичную дашборду в исходном HTML-файле?
+    ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
+      Добавляет комментарий в ваш HTML-комментарий со ссылкой на вашу общедоступную панель инструментов.
+      Идея любезно предоставлена https://github.com/divinerites/plausible-hugo.
+    SHOW_PUBLIC_DASHBOARD_URL: Да
+    HIDE_PUBLIC_DASHBOARD_URL: Нет
+    PUBLIC_DASHBOARD_URL: Публичный URL панели управления
+    PUBLIC_DASHBOARD_URL_HELP: См. https://docs.plausible.io/visibility.

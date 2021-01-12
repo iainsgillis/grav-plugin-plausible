@@ -1,3 +1,9 @@
+# v0.2.3
+##  01/13/2021
+
+1. [](#improved)
+    * Added translations from [DeepL](https://www.deepl.com/en/pro-license#free)
+
 # v0.2.2
 ##  11/22/2020
 

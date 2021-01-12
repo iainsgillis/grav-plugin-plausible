@@ -74,6 +74,6 @@ Hat-tip to [@divinerites](https://github.com/divinerites/plausible-hugo) for the
 
 ## To Do
 
-- [ ] Add translations to `languages.yaml`.
+- [x] Add translations to `languages.yaml`.
 - [ ] Add option to disable tracking per-page via frontmatter.
 - [ ] Add capability to add JS to frontmatter (as a list of block scalars?) for custom event tracking.
