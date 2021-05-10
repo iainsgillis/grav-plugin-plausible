@@ -61,6 +61,11 @@ form:
           options:
             1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
             0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
+        custom_plausible_domain:
+          type: text
+          label: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN
+          help: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN_HELP
+          placeholder: "https://plausible.io/"
 
     public_dashboard:
       type: section
