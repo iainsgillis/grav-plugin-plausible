@@ -64,14 +64,15 @@ class PlausiblePlugin extends Plugin
         if (!isset($plausibleDomain)) {
             return;
         }
-        if (!isset($this->config->get('plugins.plausible.custom_plausible_domain'))) {
+        $plausibleCustomDomain = $this->config->get('plugins.plausible.custom_plausible_domain')
+        if (!isset($plausibleCustomDomain)) {
             return;
         }
 
         $externalLinksEnabled = $this->config->get('plugins.plausible.outbound_link_tracking');
         $customEventsEnabled = $this->config->get('plugins.plausible.custom_event_goals');
 
-        $plausibleSrcUrl = $this->config->get('plugins.plausible.custom_plausible_domain') . 'js/plausible' . ($externalLinksEnabled ? '.outbound-links' : '') . '.js';
+        $plausibleSrcUrl = $plausibleCustomDomain . 'js/plausible' . ($externalLinksEnabled ? '.outbound-links' : '') . '.js';
         $this->grav['assets']->addJs($plausibleSrcUrl, ['loading' => 'async defer', 'data-domain' => $plausibleDomain]);
 
         if ($customEventsEnabled) {
