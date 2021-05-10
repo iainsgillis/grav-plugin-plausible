@@ -204,7 +204,7 @@ pl:
     DONT_TRACK_CUSTOM: Nie
 
     ENABLE_OUTBOUND_LINK_TRACKING: Włączyć śledzenie linków wychodzących?
-    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Patrz: https://docs.plausible.io/outbound-link-click-tracking.
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: "Patrz: https://docs.plausible.io/outbound-link-click-tracking."
     TRACK_OUTBOUND_OUTBOUND: Tak
     DONT_TRACK_OUTBOUND: Nie
 
