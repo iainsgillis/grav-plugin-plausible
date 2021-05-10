@@ -64,7 +64,7 @@ class PlausiblePlugin extends Plugin
         if (!isset($plausibleDomain)) {
             return;
         }
-        $plausibleCustomDomain = $this->config->get('plugins.plausible.custom_plausible_domain')
+        $plausibleCustomDomain = $this->config->get('plugins.plausible.custom_plausible_domain');
         if (!isset($plausibleCustomDomain)) {
             return;
         }
