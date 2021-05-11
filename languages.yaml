@@ -194,7 +194,7 @@ pl:
       Zobacz https://docs.plausible.io/add-website.
 
     # Zaawansowane: Niestandardowe wydarzenia, linki wychodzące
-    ADVANCED: Zaawansowany:
+    ADVANCED: Zaawansowany
     ENABLE_CUSTOM_EVENT_TRACKING: Włączyć niestandardowe śledzenie zdarzeń?
     ENABLE_CUSTOM_EVENT_TRACKING_HELP: Zobacz https://docs.plausible.io/custom-event-goals.
     TRACK_CUSTOM: Tak
