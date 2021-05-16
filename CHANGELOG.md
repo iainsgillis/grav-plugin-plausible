@@ -1,3 +1,9 @@
+# v0.2.4
+##  05/15/2021
+
+1. [](#bugfix)
+    * Fix languages.yaml syntax (thanks @mascali33)
+
 # v0.2.3
 ##  01/13/2021
 
