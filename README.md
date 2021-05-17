@@ -6,7 +6,20 @@ This plugin currently doesn't support self-hosted Plausible instances. Shouldn't
 
 ## Installation
 
-Installing the Plausible Analytics plugin can currently only be done manually.
+Installing the Plausible Analytics plugin using the GPM (Grav Package Manager) cli, the Grav admin panel, or manually. The GPM and admin panel methods are generally to be preferred.
+
+### GPM
+
+From the root of your Grav site, enter the following command:
+
+```bash
+$ bin/gpm install plausible
+```
+
+### Admin Panel
+
+Please find the latest instructions on how to add new plugins to your Grav site [via the admin panel](https://learn.getgrav.org/17/admin-panel/plugins). In the filter box, search for "Plausible" to narrow your search.
+
 
 ### Manual Installation
 
@@ -43,7 +56,7 @@ public_dashboard_url:
   - To actually output a comment in the HTML source, `public_dashboard_visible` must be `true` **and** `public_dashboard_url` must be a non-empty string.
   - If these conditions are met, then (e.g.,) `<!-- Plausible Analytics public dashboard URL : https://plausible.io/your-domain-here.com -->` is injected before your page content.
 
-Note that if you use the Admin Plugin, a file with your configuration named plausible.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
+Note that if you use the Admin Plugin, a file with your configuration named `plausible.yaml` will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
