@@ -68,9 +68,6 @@ class PlausiblePlugin extends Plugin
         $externalLinksEnabled = $this->config->get('plugins.plausible.outbound_link_tracking');
         $customEventsEnabled = $this->config->get('plugins.plausible.custom_event_goals');
 
-        $plausibleSrcUrl = $plausibleCustomDomain . 'js/plausible' . ($externalLinksEnabled ? '.outbound-links' : '') . '.js';
-        $this->grav['assets']->addJs($plausibleSrcUrl, ['loading' => 'async defer', 'data-domain' => $dataDomain]);
-
         $selfHostingEnabled = $this->config->get('plugins.plausible.self_hosting_custom_domain.self_hosting');
         $selfHostingUrl = $this->config->get('plugins.plausible.self_hosting_custom_domain.url');
 
