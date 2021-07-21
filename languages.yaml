@@ -18,6 +18,9 @@ en:
     ENABLE_OUTBOUND_LINK_TRACKING_HELP: See https://docs.plausible.io/outbound-link-click-tracking.
     TRACK_OUTBOUND: Yes
     DONT_TRACK_OUTBOUND: No
+    
+    PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN: Custom plausible domain?
+    PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN_HELP: Only use if you self-hosted plausible
 
     # Public
     PUBLIC_DASHBOARD: Public Dashboard
