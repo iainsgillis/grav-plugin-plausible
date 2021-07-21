@@ -60,8 +60,8 @@ class PlausiblePlugin extends Plugin
             return;
         }
 
-        $plausibleDomain = $this->config->get('plugins.plausible.data_domain');
-        if (!isset($plausibleDomain)) {
+        $dataDomain = $this->config->get('plugins.plausible.data_domain');
+        if (!isset($dataDomain)) {
             return;
         }
 
