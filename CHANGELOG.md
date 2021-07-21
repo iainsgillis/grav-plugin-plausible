@@ -1,10 +1,21 @@
+v0.3.1
+
+## 07/20/2021
+
+1. [](#bugfix)
+    * 🐛 Fix early return if custom domain not set
+    * 🐛 Fix wrong parameter name
+
+1. [](#improvement)
+    * 🔥 Remove dead code
+
 # v0.3.0
 ##  07/20/2021
 
 1. [](#new)
     * Allow for self-hosted/custom domain configuration (thanks @mascali33 and @rootarch)
 
-1. [](#improvement)
+2. [](#improvement)
     * Tidied up languages.yaml
 
 # v0.2.4
