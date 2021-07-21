@@ -69,7 +69,7 @@ class PlausiblePlugin extends Plugin
         $customEventsEnabled = $this->config->get('plugins.plausible.custom_event_goals');
 
         $selfHostingEnabled = $this->config->get('plugins.plausible.self_hosting_custom_domain.self_hosting');
-        $selfHostingUrl = $this->config->get('plugins.plausible.self_hosting_custom_domain.url');
+        $selfHostingUrl = $this->config->get('plugins.plausible.self_hosting_custom_domain.custom_domain');
 
         $plausibleBaseUrl = ($selfHostingEnabled && isset($selfHostingUrl)) ? $selfHostingUrl : 'https://plausible.io';
 
