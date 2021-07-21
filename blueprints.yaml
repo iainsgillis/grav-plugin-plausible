@@ -61,11 +61,37 @@ form:
           options:
             1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
             0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
+<<<<<<< HEAD
         custom_plausible_domain:
           type: text
           label: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN
           help: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN_HELP
           placeholder: "https://plausible.io/"
+=======
+        self_hosting_custom_domain:
+          type: fieldset
+          title: "Self Hosted & Custom Domain"
+          text: | 
+            Hic sunt dracones. As a bit of a safety check, you must turn this feature on using the 
+            toggle *and* set the custom url that points to your self-hosted instance of Plausible.
+          icon: server
+          collapsed: true
+          collapsible: true
+          fields:
+            self_hosting:
+              type: toggle
+              label: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING
+              help: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING_HELP
+              default: 0
+              options:
+                1: PLUGIN_PLAUSIBLE.SELF_HOSTING
+                0: PLUGIN_PLAUSIBLE.NOT_SELF_HOSTING
+            custom_domain:
+              type: text
+              label: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN
+              help: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN_HELP
+
+>>>>>>> f9d4d3e (add self-hosting logic)
 
     public_dashboard:
       type: section
