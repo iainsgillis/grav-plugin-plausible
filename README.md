@@ -29,7 +29,7 @@ You should now have all the plugin files under
 
     /your/site/grav/user/plugins/plausible
 	
-> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/iainsgillis/grav-plugin-plausible/blob/master/blueprints.yaml).
+> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml file on GitHub](https://github.com/iainsgillis/grav-plugin-plausible/blob/master/blueprints.yaml).
 
 ## Configuration
 
@@ -40,21 +40,27 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 enabled: true
 active: true
-data_domain:
+data_domain: null
 custom_event_goals: false
 outbound_link_tracking: false
 public_dashboard_visible: false
-public_dashboard_url:
+public_dashboard_url: null
+custom_plausible_domain: "https://plausible.io/"
+self_hosting: false
+custom_domain: null
 ```
 - `enabled: true|false` toggles whether the Plausible Analytics plugin is turned on or off.
 - `active: true|false` toggles whether Plausible Analytics is enabled site-wide or not.
-- `data_domain:` is the domain you wish to track in Plausible Analytics; needs to be registered with Plausible.
+- `data_domain: String?` is the domain you wish to track in Plausible Analytics; needs to be registered with Plausible.
 - `custom_event_goals: true|false` toggles whether the global JavaScript function `plausible` is registered, enabling you to trigger custom events.
 - `outbound_link_tracking: true|false` toggles whether the Plausible script snippet that gets loaded is capable of tracking outbound clicks.
 - `public_dashboard_visible: true|false` toggles whether to output a comment in the source of the page comment with a link to your public website stats dashboard.
-- `public_dashboard_url:` is the full URL of your public dashboard, as set out in [https://docs.plausible.io/visibility]().
+- `public_dashboard_url: String?` is the full URL of your public dashboard, as set out in [https://docs.plausible.io/visibility]().
   - To actually output a comment in the HTML source, `public_dashboard_visible` must be `true` **and** `public_dashboard_url` must be a non-empty string.
   - If these conditions are met, then (e.g.,) `<!-- Plausible Analytics public dashboard URL : https://plausible.io/your-domain-here.com -->` is injected before your page content.
+- `self_hosting: true|false` toggles whether to enable 
+- `custom_domain: String?` is the scheme, hostname, and optionally, the port to your self-hosted Plausible instance.
+  - To use a self-hosted instance, `self_hosting` must be `true` **and** `custom_domain` must be a non-empty string.
 
 Note that if you use the Admin Plugin, a file with your configuration named `plausible.yaml` will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
@@ -79,14 +85,27 @@ Refer to the [Plausible docs on Custom event goals](https://docs.plausible.io/cu
 1. Set `outbound_link_tracking` to `true`.
 2. [Follow the Plausible documentation to create a custom event goal](https://docs.plausible.io/outbound-link-click-tracking#step-2-create-a-custom-event-goal-in-your-plausible-analytics-account) with the name `Outbound Link: Click`.
 
+#### Self-Hosting Plausible and Custom Domain
+
+1. [Follow the Plausible documentation to install and configure your self-hosted instance](https://plausible.io/docs/self-hosting).
+2. Set `self_hosting` to `true`.
+3. Add the URL to your self-hosted instance, omitting the trailing slash(`/`) and `js/plausible`.
+
 ## Credits
 
 [Plausible Analytics](https://plausible.io) is itself an open source project, licensed under GNU Affero General Public License Version 3 (AGPLv3). 
 
 Hat-tip to [@divinerites](https://github.com/divinerites/plausible-hugo) for the idea to add public dashboard information to the page source.
 
-## To Do
+## Ideas/Todos
+
+- [ ] Handle Plausible's [exclusions](https://plausible.io/docs/excluding-pages)
+- [ ] Add option to disable tracking entirely per-page via frontmatter? 
+- [ ] Add capability to add JS to frontmatter (as a list of block scalars?) for custom event tracking
+
+### Done
 
 - [x] Add translations to `languages.yaml`.
-- [ ] Add option to disable tracking per-page via frontmatter.
-- [ ] Add capability to add JS to frontmatter (as a list of block scalars?) for custom event tracking.
+- [x] Allow self-hosting configuration
+
+

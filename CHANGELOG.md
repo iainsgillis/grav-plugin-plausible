@@ -1,3 +1,12 @@
+# v0.3.0
+##  07/20/2021
+
+1. [](#new)
+    * Allow for self-hosted/custom domain configuration (thanks @mascali33 and @rootarch)
+
+1. [](#improvement)
+    * Tidied up languages.yaml
+
 # v0.2.4
 ##  05/15/2021
 
