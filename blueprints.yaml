@@ -61,13 +61,7 @@ form:
           options:
             1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
             0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
-<<<<<<< HEAD
-        custom_plausible_domain:
-          type: text
-          label: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN
-          help: PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN_HELP
-          placeholder: "https://plausible.io/"
-=======
+
         self_hosting_custom_domain:
           type: fieldset
           title: "Self Hosted & Custom Domain"
@@ -90,8 +84,6 @@ form:
               type: text
               label: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN
               help: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN_HELP
-
->>>>>>> f9d4d3e (add self-hosting logic)
 
     public_dashboard:
       type: section

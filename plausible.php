@@ -72,10 +72,9 @@ class PlausiblePlugin extends Plugin
         $externalLinksEnabled = $this->config->get('plugins.plausible.outbound_link_tracking');
         $customEventsEnabled = $this->config->get('plugins.plausible.custom_event_goals');
 
-<<<<<<< HEAD
         $plausibleSrcUrl = $plausibleCustomDomain . 'js/plausible' . ($externalLinksEnabled ? '.outbound-links' : '') . '.js';
-        $this->grav['assets']->addJs($plausibleSrcUrl, ['loading' => 'async defer', 'data-domain' => $plausibleDomain]);
-=======
+        $this->grav['assets']->addJs($plausibleSrcUrl, ['loading' => 'async defer', 'data-domain' => $dataDomain]);
+
         $selfHostingEnabled = $this->config->get('plugins.plausible.self_hosting_custom_domain.self_hosting');
         $selfHostingUrl = $this->config->get('plugins.plausible.self_hosting_custom_domain.url');
 
@@ -85,7 +84,6 @@ class PlausiblePlugin extends Plugin
         $plausibleSrcUrl = $plausibleBaseUrl . '/js/plausible' . ($externalLinksEnabled ? '.outbound-links' : '') . '.js';
 
         $this->grav['assets']->addJs($plausibleSrcUrl, ['loading' => 'async defer', 'data-domain' => $dataDomain]);
->>>>>>> f9d4d3e (add self-hosting logic)
 
         if ($customEventsEnabled) {
             // see https://docs.plausible.io/custom-event-goals
