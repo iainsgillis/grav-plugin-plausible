@@ -64,10 +64,6 @@ class PlausiblePlugin extends Plugin
         if (!isset($dataDomain)) {
             return;
         }
-        $plausibleCustomDomain = $this->config->get('plugins.plausible.custom_plausible_domain');
-        if (!isset($plausibleCustomDomain)) {
-            return;
-        }
 
         $externalLinksEnabled = $this->config->get('plugins.plausible.outbound_link_tracking');
         $customEventsEnabled = $this->config->get('plugins.plausible.custom_event_goals');
