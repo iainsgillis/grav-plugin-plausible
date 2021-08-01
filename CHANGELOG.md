@@ -1,3 +1,9 @@
+# v0.3.2
+## 08/01/2021
+
+1. [](#bugfix)
+    * Fix self hosted configuration variables (thanks @markatk)
+
 # v0.3.1
 ## 07/20/2021
 
