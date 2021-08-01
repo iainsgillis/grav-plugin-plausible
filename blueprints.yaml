@@ -1,7 +1,7 @@
 name: Plausible Analytics
 slug: plausible
 type: plugin
-version: 0.3.1
+version: 0.3.2
 description: Integrate Plausible Analytics into your Grav site.
 icon: bar-chart
 author:
