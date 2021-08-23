@@ -55,7 +55,7 @@ custom_domain: null
 - `custom_event_goals: true|false` toggles whether the global JavaScript function `plausible` is registered, enabling you to trigger custom events.
 - `outbound_link_tracking: true|false` toggles whether the Plausible script snippet that gets loaded is capable of tracking outbound clicks.
 - `public_dashboard_visible: true|false` toggles whether to output a comment in the source of the page comment with a link to your public website stats dashboard.
-- `public_dashboard_url: String?` is the full URL of your public dashboard, as set out in [https://docs.plausible.io/visibility]().
+- `public_dashboard_url: String?` is the full URL of your public dashboard, as set out in [https://docs.plausible.io/visibility](https://docs.plausible.io/visibility).
   - To actually output a comment in the HTML source, `public_dashboard_visible` must be `true` **and** `public_dashboard_url` must be a non-empty string.
   - If these conditions are met, then (e.g.,) `<!-- Plausible Analytics public dashboard URL : https://plausible.io/your-domain-here.com -->` is injected before your page content.
 - `self_hosting: true|false` toggles whether to enable 
