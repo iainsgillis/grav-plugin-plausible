@@ -1,3 +1,13 @@
+# v0.3.3
+## 09/05/2022
+
+1. [](#bugfix)
+    * Fix incorrect keys in `languages.yaml`
+
+2. [](#improved)
+    * Add boolean validation to `blueprints.yaml`
+    * Fix 301 redirects to plausible docs in `languages.yaml`
+
 # v0.3.2
 ## 08/01/2021
 
