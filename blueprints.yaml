@@ -102,8 +102,8 @@ form:
           highlight: 1
           default: 0
           options:
-            1: Yes
-            0: No
+            1: PLUGIN_PLAUSIBLE.SHOW_PUBLIC_DASHBOARD_URL
+            0: PLUGIN_PLAUSIBLE.HIDE_PUBLIC_DASHBOARD_URL
           validate:
             type: bool
 
