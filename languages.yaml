@@ -11,22 +11,19 @@ en:
     ADVANCED: Advanced
     ENABLE_CUSTOM_EVENT_TRACKING: Enable custom event tracking?
     ENABLE_CUSTOM_EVENT_TRACKING_HELP: See https://plausible.io/docs/custom-event-goals.
-    TRACK_CUSTOM: Yes
-    DONT_TRACK_CUSTOM: No
+    TRACK_CUSTOM: 'Yes'
+    DONT_TRACK_CUSTOM: 'No'
 
     ENABLE_OUTBOUND_LINK_TRACKING: Enable outbound link tracking?
     ENABLE_OUTBOUND_LINK_TRACKING_HELP: See https://plausible.io/docs/outbound-link-click-tracking.
-    TRACK_OUTBOUND: Yes
-    DONT_TRACK_OUTBOUND: No
-    
-    PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN: Custom plausible domain?
-    PLUGIN_PLAUSIBLE.CUSTOM_PLAUSIBLE_DOMAIN_HELP: Only use if you self-hosted plausible
+    TRACK_OUTBOUND: 'Yes'
+    DONT_TRACK_OUTBOUND: 'No'
 
     ## Self-hosting & custom domain 
     ENABLE_SELF_HOSTING: "Enable and configure a self-hosted instance of Plausible?"
     ENABLE_SELF_HOSTING_HELP: See https://plausible.io/docs/self-hosting.
-    SELF_HOSTING: Yes
-    NOT_SELF_HOSTING: No
+    SELF_HOSTING: 'Yes'
+    NOT_SELF_HOSTING: 'No'
     SELF_HOSTING_CUSTOM_DOMAIN: URL to your self-hosted instance of Plausible
     SELF_HOSTING_CUSTOM_DOMAIN_HELP: "This could also be an IP address. Include the protocol, but omit the trailing slash and `js/plausible`."
 
@@ -36,8 +33,8 @@ en:
     ADD_PUBLIC_DASHBOARD_URL_TO_SOURCE_HELP: |
       Adds a comment in your HTML source with a link to your public dashboard.
       Idea courtesy of https://github.com/divinerites/plausible-hugo
-    SHOW_PUBLIC_DASHBOARD_URL: Yes
-    HIDE_PUBLIC_DASHBOARD_URL: No
+    SHOW_PUBLIC_DASHBOARD_URL: 'Yes'
+    HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: Public dashboard URL
     PUBLIC_DASHBOARD_URL_HELP: See https://plausible.io/docs/visibility.
 
@@ -128,17 +125,17 @@ it:
     ENABLE_CUSTOM_EVENT_TRACKING: Abilitare il tracking personalizzato degli eventi?
     ENABLE_CUSTOM_EVENT_TRACKING_HELP: Vedi https://plausible.io/docs/custom-event-goals.
     TRACK_CUSTOM: Sì
-    DONT_TRACK_CUSTOM: No
+    DONT_TRACK_CUSTOM: 'No'
 
     ENABLE_OUTBOUND_LINK_TRACKING: Abilitare il tracciamento dei collegamenti in uscita?
     ENABLE_OUTBOUND_LINK_TRACKING_HELP: Vedere https://plausible.io/docs/outbound-link-click-tracking.
     TRACK_OUTBOUND: Sì
-    DONT_TRACK_OUTBOUND: No
+    DONT_TRACK_OUTBOUND: 'No'
 
     ENABLE_SELF_HOSTING: "Abilitare e configurare un'istanza self-hosted di Plausible?"
     ENABLE_SELF_HOSTING_HELP: Vedi https://plausible.io/docs/self-hosting.
     SELF_HOSTING: Sì
-    NOT_SELF_HOSTING: No
+    NOT_SELF_HOSTING: 'No'
     SELF_HOSTING_CUSTOM_DOMAIN: URL alla tua istanza di Plausible ospitata in proprio
     SELF_HOSTING_CUSTOM_DOMAIN_HELP: "Questo potrebbe anche essere un indirizzo IP. Includi il protocollo, ma ometti la barra finale e `js/plausible`."
 
@@ -148,7 +145,7 @@ it:
       Aggiunge un commento nel vostro sorgente HTML con un link alla vostra dashboard pubblica.
       Idea per gentile concessione di https://github.com/divinerites/plausible-hugo
     SHOW_PUBLIC_DASHBOARD_URL: Sì
-    HIDE_PUBLIC_DASHBOARD_URL: No
+    HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: URL del cruscotto pubblico
     PUBLIC_DASHBOARD_URL_HELP: Vedi https://plausible.io/docs/visibility.
 
@@ -165,17 +162,17 @@ es:
     ENABLE_CUSTOM_EVENT_TRACKING: Habilitar el seguimiento de eventos personalizados.
     ENABLE_CUSTOM_EVENT_TRACKING_HELP: Ver https://plausible.io/docs/custom-event-goals.
     TRACK_CUSTOM: Sí
-    DONT_TRACK_CUSTOM: No
+    DONT_TRACK_CUSTOM: 'No'
 
     ENABLE_OUTBOUND_LINK_TRACKING: Habilitar el rastreo de enlaces salientes?
     ENABLE_OUTBOUND_LINK_TRACKING_HELP: Ver https://plausible.io/docs/outbound-link-click-tracking.
     TRACK_OUTBOUND: Sí
-    DONT_TRACK_OUTBOUND: No
+    DONT_TRACK_OUTBOUND: 'No'
 
     ENABLE_SELF_HOSTING: "¿Habilitar y configurar una instancia auto-alojada de Plausible?"
     ENABLE_SELF_HOSTING_HELP: Ver https://plausible.io/docs/self-hosting.
     SELF_HOSTING: Sí
-    NOT_SELF_HOSTING: No
+    NOT_SELF_HOSTING: 'No'
     SELF_HOSTING_CUSTOM_DOMAIN: URL de su instancia auto-alojada de Plausible
     SELF_HOSTING_CUSTOM_DOMAIN_HELP: "También puede ser una dirección IP. Incluya el protocolo, pero omita la barra diagonal final y `js/plausible`."
 
@@ -185,7 +182,7 @@ es:
       Añade un comentario en tu fuente HTML con un enlace a tu tablero público.
       Idea cortesía de https://github.com/divinerites/plausible-hugo
     SHOW_PUBLIC_DASHBOARD_URL: Sí
-    HIDE_PUBLIC_DASHBOARD_URL: No
+    HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: URL del tablero público
     PUBLIC_DASHBOARD_URL_HELP: Ver https://plausible.io/docs/visibility.
 
