@@ -52,6 +52,8 @@ form:
           options:
             1: PLUGIN_PLAUSIBLE.TRACK_CUSTOM
             0: PLUGIN_PLAUSIBLE.DONT_TRACK_CUSTOM
+          validate:
+            type: bool
         outbound_link_tracking:
           type: toggle
           label: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING
@@ -61,6 +63,8 @@ form:
           options:
             1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
             0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
+          validate:
+            type: bool
 
         self_hosting_custom_domain:
           type: fieldset
@@ -80,6 +84,8 @@ form:
               options:
                 1: PLUGIN_PLAUSIBLE.SELF_HOSTING
                 0: PLUGIN_PLAUSIBLE.NOT_SELF_HOSTING
+              validate:
+                type: bool
             custom_domain:
               type: text
               label: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN
