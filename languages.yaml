@@ -201,11 +201,11 @@ pt:
     ADVANCED: Avançado
     ENABLE_CUSTOM_EVENT_TRACKING: Permitir o seguimento de eventos personalizados?
     ENABLE_CUSTOM_EVENT_TRACKING_HELP: Ver https://docs.plausible.io/custom-event-goals.
-    TRACK_CUSTOM_CUSTOM: Sim
+    TRACK_CUSTOM: Sim
     DONT_TRACK_CUSTOM: Não
 
     ENABLE_OUTBOUND_LINK_TRACKING: Habilitar o rastreio da ligação de saída?
-    ENABLE_OUTBOUND_LINK_LINK_TRACKING_HELP: Ver https://docs.plausible.io/outbound-link-click-tracking.
+    ENABLE_OUTBOUND_LINK_TRACKING_HELP: Ver https://docs.plausible.io/outbound-link-click-tracking.
     TRACK_OUTBOUND: Sim
     DONT_TRACK_OUTBOUND: Não
 
@@ -243,7 +243,7 @@ pl:
 
     ENABLE_OUTBOUND_LINK_TRACKING: Włączyć śledzenie linków wychodzących?
     ENABLE_OUTBOUND_LINK_TRACKING_HELP: Zobacz https://docs.plausible.io/outbound-link-click-tracking.
-    TRACK_OUTBOUND_OUTBOUND: Tak
+    TRACK_OUTBOUND: Tak
     DONT_TRACK_OUTBOUND: Nie
 
     ENABLE_SELF_HOSTING: Włącz i skonfiguruj samo-hostowaną instancję Plausible?
