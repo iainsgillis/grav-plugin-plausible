@@ -1,3 +1,12 @@
+# v0.3.4
+## 09/05/2022
+
+1. [](#bugfix)
+    * Wrapped `Yes` and `No` in quotes. Fixes #5. 
+
+2. [](#improved)
+    * All fields in admin UI now translate properly.
+
 # v0.3.3
 ## 09/05/2022
 
