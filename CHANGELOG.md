@@ -1,3 +1,29 @@
+# v0.5.0
+## 11/13/2026
+
+1. [](#new)
+    * Support Plausible's site-specific tracking script URLs introduced in October 2025.
+
+2. [](#improved)
+    * Preserve legacy script URL generation for existing and older self-hosted installations.
+    * Mark the custom-event and outbound-link options as legacy compatibility settings.
+    * Add a Modern/Legacy selector that dynamically shows only the relevant settings.
+    * Output the site-specific Modern tag or generated Legacy tag based on the selected mode.
+    * Initialize the Modern script with the inline `window.plausible` queue shim, `plausible.init` fallback, and `plausible.init()` call; leave Legacy mode unchanged.
+    * Update installation instructions for Plausible's current Site Installation workflow.
+
+3. [](#bugfix)
+    * Allow saving either tracking mode in Admin Classic when the inactive mode's required value is blank.
+
+# v0.4.0
+## 09/15/2026
+
+1. [](#improved)
+    * Add Grav 2.0 and Admin Next compatibility while retaining Grav 1.7 support.
+    * Register frontend events in a way that works with the Grav 2.0 request lifecycle.
+    * Add ICU translation namespaces for Admin Next.
+    * Raise the minimum supported PHP version to 7.3.6.
+
 # v0.3.4
 ## 09/05/2022
 

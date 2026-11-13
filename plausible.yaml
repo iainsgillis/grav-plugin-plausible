@@ -1,5 +1,7 @@
 enabled: true
 active: true
+script_mode: legacy
+script_url: null
 data_domain: null
 custom_event_goals: false
 outbound_link_tracking: false

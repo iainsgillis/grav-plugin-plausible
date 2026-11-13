@@ -1,7 +1,7 @@
 name: Plausible Analytics
 slug: plausible
 type: plugin
-version: 0.3.4
+version: 0.5.0
 description: Integrate Plausible Analytics into your Grav site.
 icon: bar-chart
 author:
@@ -14,7 +14,11 @@ docs: https://github.com/iainsgillis/grav-plugin-plausible/blob/main/README.md
 license: MIT
 
 dependencies:
-  - { name: grav, version: ">=1.6.0" }
+  - { name: grav, version: ">=1.7.0" }
+compatibility:
+  grav:
+    - '1.7'
+    - '2.0'
 
 form:
   validation: strict
@@ -33,64 +37,76 @@ form:
             0: PLUGIN_ADMIN.DISABLED
           validate:
             type: bool
-        data_domain:
-          type: text
-          label: PLUGIN_PLAUSIBLE.DATA_DOMAIN
-          help: PLUGIN_PLAUSIBLE.DATA_DOMAIN_HELP
-          placeholder: <yourdomain.com>
-
-    advanced:
-      type: section
-      title: PLUGIN_PLAUSIBLE.ADVANCED
-      fields:
-        custom_event_goals:
-          type: toggle
-          label: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING
-          help: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING_HELP
-          highlight: 1
-          default: 0
+        # Admin Classic hides inactive elements without disabling their inputs.
+        # Mode-specific fields must remain optional to allow either mode to save.
+        script_mode:
+          type: elements
+          label: PLUGIN_PLAUSIBLE.SCRIPT_MODE
+          help: PLUGIN_PLAUSIBLE.SCRIPT_MODE_HELP
+          default: legacy
           options:
-            1: PLUGIN_PLAUSIBLE.TRACK_CUSTOM
-            0: PLUGIN_PLAUSIBLE.DONT_TRACK_CUSTOM
-          validate:
-            type: bool
-        outbound_link_tracking:
-          type: toggle
-          label: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING
-          help: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING_HELP
-          highlight: 1
-          default: 0
-          options:
-            1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
-            0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
-          validate:
-            type: bool
-
-        self_hosting_custom_domain:
-          type: fieldset
-          title: "Self Hosted & Custom Domain"
-          markdown: true
-          text: | 
-            Hic sunt dracones. As a bit of a safety check, you must turn this feature on using the 
-            toggle *and* set the custom url that points to your self-hosted instance of Plausible.
-          icon: server
-          collapsed: true
-          collapsible: true
+            modern: PLUGIN_PLAUSIBLE.SCRIPT_MODE_MODERN
+            legacy: PLUGIN_PLAUSIBLE.SCRIPT_MODE_LEGACY
           fields:
-            self_hosting:
-              type: toggle
-              label: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING
-              help: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING_HELP
-              default: 0
-              options:
-                1: PLUGIN_PLAUSIBLE.SELF_HOSTING
-                0: PLUGIN_PLAUSIBLE.NOT_SELF_HOSTING
-              validate:
-                type: bool
-            custom_domain:
-              type: text
-              label: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN
-              help: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN_HELP
+            modern:
+              type: element
+              fields:
+                script_url:
+                  type: url
+                  label: PLUGIN_PLAUSIBLE.SCRIPT_URL
+                  help: PLUGIN_PLAUSIBLE.SCRIPT_URL_HELP
+                  placeholder: https://plausible.io/js/pa-XXXXXXXXXXXX.js
+                  validate:
+                    required: false
+                    type: url
+            legacy:
+              type: element
+              fields:
+                data_domain:
+                  type: text
+                  label: PLUGIN_PLAUSIBLE.DATA_DOMAIN
+                  help: PLUGIN_PLAUSIBLE.DATA_DOMAIN_HELP
+                  placeholder: <yourdomain.com>
+                  validate:
+                    required: false
+                custom_event_goals:
+                  type: toggle
+                  label: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING
+                  help: PLUGIN_PLAUSIBLE.ENABLE_CUSTOM_EVENT_TRACKING_HELP
+                  highlight: 1
+                  default: 0
+                  options:
+                    1: PLUGIN_PLAUSIBLE.TRACK_CUSTOM
+                    0: PLUGIN_PLAUSIBLE.DONT_TRACK_CUSTOM
+                  validate:
+                    type: bool
+                outbound_link_tracking:
+                  type: toggle
+                  label: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING
+                  help: PLUGIN_PLAUSIBLE.ENABLE_OUTBOUND_LINK_TRACKING_HELP
+                  highlight: 1
+                  default: 0
+                  options:
+                    1: PLUGIN_PLAUSIBLE.TRACK_OUTBOUND
+                    0: PLUGIN_PLAUSIBLE.DONT_TRACK_OUTBOUND
+                  validate:
+                    type: bool
+                self_hosting:
+                  type: toggle
+                  label: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING
+                  help: PLUGIN_PLAUSIBLE.ENABLE_SELF_HOSTING_HELP
+                  default: 0
+                  options:
+                    1: PLUGIN_PLAUSIBLE.SELF_HOSTING
+                    0: PLUGIN_PLAUSIBLE.NOT_SELF_HOSTING
+                  validate:
+                    type: bool
+                custom_domain:
+                  type: url
+                  label: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN
+                  help: PLUGIN_PLAUSIBLE.SELF_HOSTING_CUSTOM_DOMAIN_HELP
+                  validate:
+                    type: url
 
     public_dashboard:
       type: section

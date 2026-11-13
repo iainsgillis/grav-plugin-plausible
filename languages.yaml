@@ -1,16 +1,21 @@
 en:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_en
     # Basic
     BASIC: General
+    SCRIPT_MODE: Tracking script
+    SCRIPT_MODE_HELP: Choose the script format used by your Plausible installation.
+    SCRIPT_MODE_MODERN: Modern (site-specific URL)
+    SCRIPT_MODE_LEGACY: Legacy
     DATA_DOMAIN: Domain
     DATA_DOMAIN_HELP: |
-      Just the naked domain without www or https://. You'll need to add your site to plausible.io if you haven't already.
+      The naked domain without www or https://.
       See https://plausible.io/docs/add-website.
+    SCRIPT_URL: Tracking script URL
+    SCRIPT_URL_HELP: "Copy the `src` URL from Site Settings > General > Site Installation in Plausible."
 
-    # Advanced: Custom Events, Outbound Links
-    ADVANCED: Advanced
-    ENABLE_CUSTOM_EVENT_TRACKING: Enable custom event tracking?
-    ENABLE_CUSTOM_EVENT_TRACKING_HELP: See https://plausible.io/docs/custom-event-goals.
+    # Legacy: Custom Events, Outbound Links
+    ENABLE_CUSTOM_EVENT_TRACKING: Register the custom event function?
+    ENABLE_CUSTOM_EVENT_TRACKING_HELP: Enable the global function shim for manually triggered custom events. See https://plausible.io/docs/custom-event-goals.
     TRACK_CUSTOM: 'Yes'
     DONT_TRACK_CUSTOM: 'No'
 
@@ -37,15 +42,23 @@ en:
     HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: Public dashboard URL
     PUBLIC_DASHBOARD_URL_HELP: See https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_en
 
 fr:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_fr
 
     BASIC: Général
+    SCRIPT_MODE: Script de suivi
+    SCRIPT_MODE_HELP: Choisissez le format de script utilisé par votre installation Plausible.
+    SCRIPT_MODE_MODERN: Moderne (URL propre au site)
+    SCRIPT_MODE_LEGACY: Historique
     DATA_DOMAIN: Domaine
     DATA_DOMAIN_HELP: |
       Le domaine nu, sans www ou https://. Vous devrez ajouter votre site à plausible.io si vous ne l'avez pas déjà fait.
       Voir https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL du script de suivi
+    SCRIPT_URL_HELP: "Copiez l'URL `src` depuis Paramètres du site > Général > Installation du site dans Plausible."
 
     ADVANCED: Avancé
     ENABLE_CUSTOM_EVENT_TRACKING: Permettre un suivi personnalisé des événements ?
@@ -74,15 +87,23 @@ fr:
     HIDE_PUBLIC_DASHBOARD_URL: Non
     PUBLIC_DASHBOARD_URL: URL du tableau de bord public
     PUBLIC_DASHBOARD_URL_HELP: Voir https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_fr
 
 de:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_de
 
     BASIC: Allgemein
+    SCRIPT_MODE: Tracking-Skript
+    SCRIPT_MODE_HELP: Wählen Sie das Skriptformat Ihrer Plausible-Installation.
+    SCRIPT_MODE_MODERN: Modern (Website-spezifische URL)
+    SCRIPT_MODE_LEGACY: Klassisch
     DATA_DOMAIN: Domäne
     DATA_DOMAIN_HELP: |
       Nur die nackte Domain ohne www oder https://. Sie müssen Ihre Site zu plausible.io hinzufügen, falls Sie das nicht schon getan haben.
       Siehe https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL des Tracking-Skripts
+    SCRIPT_URL_HELP: "Kopieren Sie die `src`-URL aus Website-Einstellungen > Allgemein > Website-Installation in Plausible."
 
     ADVANCED: Erweitert
     ENABLE_CUSTOM_EVENT_TRACKING: Benutzerdefinierte Ereignisverfolgung einschalten?
@@ -111,15 +132,23 @@ de:
     HIDE_PUBLIC_DASHBOARD_URL: Nein
     PUBLIC_DASHBOARD_URL: Öffentliche Dashboard-URL
     PUBLIC_DASHBOARD_URL_HELP: Siehe https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_de
 
 it:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_it
 
     BASIC: Generale
+    SCRIPT_MODE: Script di tracciamento
+    SCRIPT_MODE_HELP: Scegli il formato dello script usato dalla tua installazione Plausible.
+    SCRIPT_MODE_MODERN: Moderno (URL specifico del sito)
+    SCRIPT_MODE_LEGACY: Precedente
     DATA_DOMAIN: Dominio
     DATA_DOMAIN_HELP: |
       Solo il dominio nudo senza www o https://. Dovrai aggiungere il tuo sito a plausible.io se non l'hai già fatto.
       Vedi https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL dello script di tracciamento
+    SCRIPT_URL_HELP: "Copia l'URL `src` da Impostazioni sito > Generale > Installazione sito in Plausible."
 
     ADVANCED: Avanzato
     ENABLE_CUSTOM_EVENT_TRACKING: Abilitare il tracking personalizzato degli eventi?
@@ -148,15 +177,23 @@ it:
     HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: URL del cruscotto pubblico
     PUBLIC_DASHBOARD_URL_HELP: Vedi https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_it
 
 es:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_es
 
     BASIC: General
+    SCRIPT_MODE: Script de seguimiento
+    SCRIPT_MODE_HELP: Elige el formato de script utilizado por tu instalación de Plausible.
+    SCRIPT_MODE_MODERN: Moderno (URL específica del sitio)
+    SCRIPT_MODE_LEGACY: Anterior
     DATA_DOMAIN: Dominio
     DATA_DOMAIN_HELP: |
       Sólo el dominio desnudo sin www o https://. Tendrás que añadir tu sitio a plausible.io si no lo has hecho ya.
       Vea https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL del script de seguimiento
+    SCRIPT_URL_HELP: "Copia la URL `src` desde Configuración del sitio > General > Instalación del sitio en Plausible."
 
     ADVANCED: Avanzado
     ENABLE_CUSTOM_EVENT_TRACKING: Habilitar el seguimiento de eventos personalizados.
@@ -185,15 +222,23 @@ es:
     HIDE_PUBLIC_DASHBOARD_URL: 'No'
     PUBLIC_DASHBOARD_URL: URL del tablero público
     PUBLIC_DASHBOARD_URL_HELP: Ver https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_es
 
 pt:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_pt
 
     BASIC: Geral
+    SCRIPT_MODE: Script de rastreio
+    SCRIPT_MODE_HELP: Escolha o formato de script utilizado pela sua instalação do Plausible.
+    SCRIPT_MODE_MODERN: Moderno (URL específica do site)
+    SCRIPT_MODE_LEGACY: Antigo
     DATA_DOMAIN: Domínio
     DATA_DOMAIN_HELP: |
       Apenas o domínio nú sem www ou https://. Terá de acrescentar o seu site ao plausível.io se ainda não o fez.
       Ver https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL do script de rastreio
+    SCRIPT_URL_HELP: "Copie o URL `src` de Definições do site > Geral > Instalação do site no Plausible."
 
     ADVANCED: Avançado
     ENABLE_CUSTOM_EVENT_TRACKING: Permitir o seguimento de eventos personalizados?
@@ -222,15 +267,23 @@ pt:
     HIDE_PUBLIC_DASHBOARD_URL: Não
     PUBLIC_DASHBOARD_URL: URL do painel de controlo público
     PUBLIC_DASHBOARD_URL_HELP: Ver https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_pt
 
 pl:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_pl
 
     BASIC: Ogólne
+    SCRIPT_MODE: Skrypt śledzący
+    SCRIPT_MODE_HELP: Wybierz format skryptu używany przez instalację Plausible.
+    SCRIPT_MODE_MODERN: Nowoczesny (adres właściwy dla witryny)
+    SCRIPT_MODE_LEGACY: Starszy
     DATA_DOMAIN: Domena
     DATA_DOMAIN_HELP: |
       Tylko naga domena bez www lub https://. Musisz dodać swoją stronę do plausible.io, jeśli jeszcze tego nie zrobiłeś.
       Zobacz https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL skryptu śledzącego
+    SCRIPT_URL_HELP: "Skopiuj URL `src` z Ustawienia witryny > Ogólne > Instalacja witryny w Plausible."
 
     ADVANCED: Zaawansowany
     ENABLE_CUSTOM_EVENT_TRACKING: Włączyć niestandardowe śledzenie zdarzeń?
@@ -259,15 +312,23 @@ pl:
     HIDE_PUBLIC_DASHBOARD_URL: Nie
     PUBLIC_DASHBOARD_URL: Publiczna tablica rozdzielcza URL
     PUBLIC_DASHBOARD_URL_HELP: Patrz https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_pl
 
 ru:
-  PLUGIN_PLAUSIBLE:
+  PLUGIN_PLAUSIBLE: &plausible_ru
 
     BASIC: Генерал
+    SCRIPT_MODE: Скрипт отслеживания
+    SCRIPT_MODE_HELP: Выберите формат скрипта, используемый вашей установкой Plausible.
+    SCRIPT_MODE_MODERN: Современный (URL для конкретного сайта)
+    SCRIPT_MODE_LEGACY: Устаревший
     DATA_DOMAIN: Домен
     DATA_DOMAIN_HELP: |
       Только голый домен без www или https://. Если вы еще этого не сделали, то вам нужно будет добавить свой сайт в "Правдоподобный.io".
       Смотрите https://plausible.io/docs/add-website.
+    SCRIPT_URL: URL скрипта отслеживания
+    SCRIPT_URL_HELP: "Скопируйте URL `src` из Настройки сайта > Общие > Установка сайта в Plausible."
 
     ADVANCED: Расширенный сайт
     ENABLE_CUSTOM_EVENT_TRACKING: Включить пользовательское отслеживание событий?
@@ -296,3 +357,5 @@ ru:
     HIDE_PUBLIC_DASHBOARD_URL: Нет
     PUBLIC_DASHBOARD_URL: Публичный URL панели управления
     PUBLIC_DASHBOARD_URL_HELP: См. https://plausible.io/docs/visibility.
+  ICU:
+    PLUGIN_PLAUSIBLE: *plausible_ru
